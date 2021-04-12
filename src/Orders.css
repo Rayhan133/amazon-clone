@@ -1,0 +1,44 @@
+.orders {
+	align-items: center;
+	align-content: center;
+	text-align: center;
+}
+.orders > h1 {
+	font-size: 50px;
+}
+.HomeBtn {
+	text-align: center;
+	background-color: #f0c14b;
+	border-radius: 2px;
+	width: 20%;
+	height: 30px;
+	border: 1px solid;
+	margin-top: 10px;
+	border-color: #a88734 #9c7e31 #846a29;
+	transition: all 0.5s;
+}
+
+.HomeBtn > span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.HomeBtn > span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+.HomeBtn:hover span {
+	padding-right: 25px;
+}
+
+.HomeBtn:hover span:after {
+	opacity: 1;
+	right: 0;
+}
